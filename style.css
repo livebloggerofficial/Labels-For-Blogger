@@ -1,0 +1,42 @@
+.labels-container .label-icon {
+    width: 24px;
+}
+
+.labels-container {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+}
+
+.labels-container .labels {
+    background: #d0fafc;
+    padding: 4px 16px;
+    border-radius: 16px 0 16px 0;
+    position: relative;
+}
+
+.labels-container .label-icon {
+    position: absolute;
+    top: -13px;
+    right: -18px;
+    transform: rotateZ(285deg);
+}
+
+.labels-container a {
+    text-decoration: none;
+    color: #03608f;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.labels-container a:hover {
+    color: #001620;
+}
+
+.labels-container a::after {
+    content: ","
+}
+
+.labels-container a:last-child::after {
+    content: "";
+}
